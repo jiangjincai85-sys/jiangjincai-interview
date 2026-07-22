@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蒋金才 · 面试自我介绍</title>
+<style>
+/* ========== 主题变量 ========== */
+:root[data-theme="light"] {
+  --bg: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-subtle: #F9FAFB;
+  --bg-nav: rgba(255,255,255,0.92);
+  --text: #1F2937;
+  --text-muted: #6B7280;
+  --text-soft: #4B5563;
+  --border: #E5E7EB;
+  --border-soft: #F3F4F6;
+  --accent: #2563EB;
+  --accent-soft: #DBEAFE;
+  --accent-text: #1E40AF;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04);
+  --shadow-hover: 0 4px 12px rgba(37,99,235,0.12), 0 8px 24px rgba(0,0,0,0.06);
+}
+:root[data-theme="dark"] {
+  --bg: #0F172A;
+  --bg-card: #1E293B;
+  --bg-subtle: #111827;
+  --bg-nav: rgba(15,23,42,0.92);
+  --text: #E5E7EB;
+  --text-muted: #94A3B8;
+  --text-soft: #CBD5E1;
+  --border: #334155;
+  --border-soft: #1E293B;
+  --accent: #3B82F6;
+  --accent-soft: #1E3A8A;
+  --accent-text: #93C5FD;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2);
+  --shadow-hover: 0 4px 12px rgba(59,130,246,0.25), 0 8px 24px rgba(0,0,0,0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ========== 顶部导航 ========== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--bg-nav);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 32px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand { font-weight: 600; font-size: 15px; color: var(--text); }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a {
+  color: var(--text-muted); font-size: 14px; font-weight: 500;
+  padding: 6px 0; position: relative;
+}
+.nav-links a:hover { color: var(--accent); text-decoration: none; }
+.nav-links a.active { color: var(--accent); }
+.nav-links a.active::after {
+  content: ""; position: absolute; bottom: -16px; left: 0; right: 0;
+  height: 2px; background: var(--accent);
+}
+.theme-toggle {
+  background: var(--bg-subtle); border: 1px solid var(--border);
+  color: var(--text); padding: 8px 14px; border-radius: 8px;
+  cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: all 0.2s;
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ========== 容器 ========== */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+section { padding: 88px 0 64px; border-bottom: 1px solid var(--border-soft); }
+section:last-of-type { border-bottom: none; }
+
+.section-tag {
+  display: inline-block; font-size: 12px; font-weight: 600;
+  color: var(--accent); background: var(--accent-soft);
+  padding: 4px 12px; border-radius: 100px; letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-size: 32px; font-weight: 700; color: var(--text);
+  margin-bottom: 12px; letter-spacing: -0.5px;
+}
+.section-desc {
+  font-size: 16px; color: var(--text-muted); margin-bottom: 40px;
+  max-width: 720px;
+}
+
+/* ========== S1 封面 ========== */
+.hero {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 120px 32px 80px;
+  background: linear-gradient(180deg, var(--bg-subtle) 0%, var(--bg) 100%);
+}
+.hero-avatar {
+  width: 96px; height: 96px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-text) 100%);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 36px; font-weight: 700; margin: 0 auto 28px;
+  box-shadow: var(--shadow-hover);
+}
+.hero h1 { font-size: 44px; font-weight: 700; margin-bottom: 12px; letter-spacing: -1px; }
+.hero-subtitle { font-size: 18px; color: var(--text-muted); margin-bottom: 32px; }
+.hero-tags { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+.hero-tag {
+  padding: 8px 18px; border-radius: 100px;
+  background: var(--accent-soft); color: var(--accent-text);
+  font-size: 14px; font-weight: 500;
+}
+.hero-tag.outline {
+  background: transparent; border: 1px solid var(--border); color: var(--text-muted);
+}
+.hero-quote {
+  max-width: 680px; margin: 0 auto; padding: 24px 28px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; box-shadow: var(--shadow);
+  font-size: 16px; color: var(--text-soft); line-height: 1.8;
+}
+.hero-quote strong { color: var(--text); }
+
+/* ========== S2 时间轴 ========== */
+.timeline { display: flex; flex-direction: column; gap: 0; position: relative; padding-left: 28px; }
+.timeline::before {
+  content: ""; position: absolute; left: 7px; top: 24px; bottom: 24px;
+  width: 2px; background: var(--border);
+}
+.timeline-item {
+  display: block; padding: 24px 0; position: relative;
+}
+.timeline-dot {
+  position: absolute; left: -28px; top: 32px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--bg); border: 3px solid var(--accent);
+}
+.timeline-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 20px 24px; box-shadow: var(--shadow);
+}
+.timeline-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+.timeline-card .meta { font-size: 13px; color: var(--text-muted); margin-bottom: 10px; }
+.timeline-card p { font-size: 15px; color: var(--text-soft); }
+
+/* ========== S3 四阶段卡片 ========== */
+.stage-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.stage-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 24px; box-shadow: var(--shadow);
+  transition: all 0.3s; position: relative;
+}
+.stage-card:hover {
+  border-color: var(--accent); box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.stage-num {
+  font-size: 12px; font-weight: 600; color: var(--accent);
+  background: var(--accent-soft); padding: 2px 8px; border-radius: 4px;
+  display: inline-block; margin-bottom: 12px;
+}
+.stage-card h4 { font-size: 17px; font-weight: 600; margin-bottom: 12px; color: var(--text); }
+.stage-card .pain {
+  font-size: 13px; color: var(--text-muted); margin-bottom: 12px;
+  padding-bottom: 12px; border-bottom: 1px dashed var(--border);
+}
+.stage-card .gain {
+  font-size: 14px; color: var(--text-soft); line-height: 1.6;
+}
+.stage-card .gain strong { color: var(--accent-text); }
+
+/* ========== S4 需求洞察 ========== */
+.insight-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+}
+.method-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px; box-shadow: var(--shadow);
+}
+.method-card h3 {
+  font-size: 18px; font-weight: 600; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 8px;
+}
+.method-card h3::before {
+  content: ""; width: 4px; height: 20px; background: var(--accent);
+  border-radius: 2px;
+}
+.method-formula {
+  font-size: 22px; font-weight: 700; color: var(--accent-text);
+  text-align: center; padding: 20px; background: var(--bg-subtle);
+  border-radius: 10px; margin: 16px 0; letter-spacing: 1px;
+}
+.method-formula span { color: var(--accent); }
+.method-list { list-style: none; padding: 0; }
+.method-list li {
+  padding: 10px 0; padding-left: 24px; position: relative;
+  font-size: 15px; color: var(--text-soft);
+}
+.method-list li::before {
+  content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: 600;
+}
+.metric-matrix {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px; box-shadow: var(--shadow);
+}
+.metric-row {
+  display: grid; grid-template-columns: 120px 1fr; gap: 16px;
+  padding: 14px 0; border-bottom: 1px solid var(--border-soft);
+  align-items: start;
+}
+.metric-row:last-child { border-bottom: none; }
+.metric-label { font-weight: 600; color: var(--text); font-size: 15px; }
+.metric-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+/* ========== S5 业绩看板 ========== */
+.kpi-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 32px;
+}
+.kpi-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px; text-align: center; box-shadow: var(--shadow);
+  position: relative; overflow: hidden;
+}
+.kpi-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-text));
+}
+.kpi-value {
+  font-size: 44px; font-weight: 700; color: var(--accent);
+  letter-spacing: -1px; line-height: 1; margin-bottom: 8px;
+}
+.kpi-value::after { content: "%"; font-size: 24px; margin-left: 2px; }
+.kpi-label { font-size: 15px; color: var(--text); font-weight: 500; margin-bottom: 4px; }
+.kpi-sub { font-size: 13px; color: var(--text-muted); }
+
+.project-growth {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px; box-shadow: var(--shadow);
+}
+.project-growth h3 { font-size: 18px; margin-bottom: 20px; font-weight: 600; }
+.growth-row {
+  display: grid; grid-template-columns: 80px 1fr 80px; gap: 20px;
+  align-items: center; padding: 16px 0; border-bottom: 1px solid var(--border-soft);
+}
+.growth-row:last-child { border-bottom: none; }
+.growth-year { font-size: 14px; color: var(--text-muted); font-weight: 500; }
+.growth-bar {
+  height: 10px; background: var(--bg-subtle); border-radius: 100px;
+  position: relative; overflow: hidden;
+}
+.growth-bar-fill {
+  height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-text));
+  border-radius: 100px; width: 0; transition: width 1.5s ease-out;
+}
+.growth-num { font-size: 14px; font-weight: 600; color: var(--text); text-align: right; }
+
+/* ========== S6-S9 案例卡片 ========== */
+.case-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px; box-shadow: var(--shadow);
+  margin-bottom: 24px;
+}
+.case-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border-soft);
+}
+.case-title { font-size: 20px; font-weight: 600; color: var(--text); }
+.case-badge {
+  padding: 4px 12px; border-radius: 100px; font-size: 12px; font-weight: 600;
+  background: var(--accent-soft); color: var(--accent-text);
+}
+.case-badge.gold { background: #FEF3C7; color: #92400E; }
+:root[data-theme="dark"] .case-badge.gold { background: #78350F; color: #FCD34D; }
+
+.flow-4 {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+}
+.flow-step {
+  background: var(--bg-subtle); border-radius: 10px; padding: 16px;
+  position: relative;
+}
+.flow-step-label {
+  font-size: 11px; font-weight: 600; color: var(--accent);
+  letter-spacing: 1px; margin-bottom: 8px;
+}
+.flow-step h5 { font-size: 15px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+.flow-step p { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+.result-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px;
+}
+.result-item {
+  background: var(--bg-subtle); border-radius: 10px; padding: 18px; text-align: center;
+}
+.result-item .num { font-size: 26px; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+.result-item .label { font-size: 13px; color: var(--text-muted); }
+
+.link-row {
+  margin-top: 20px; padding-top: 16px; border-top: 1px dashed var(--border);
+  display: flex; flex-wrap: wrap; gap: 20px;
+}
+.link-row a {
+  font-size: 13px; color: var(--text-muted);
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.link-row a:hover { color: var(--accent); }
+
+/* ========== S8 截图对比 ========== */
+.compare {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+}
+.compare-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);
+}
+.compare-card img { width: 100%; display: block; }
+.compare-caption {
+  padding: 14px 18px; font-size: 14px; color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; gap: 8px;
+}
+.compare-caption .tag {
+  padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;
+}
+.compare-caption .tag.before { background: #FEE2E2; color: #991B1B; }
+.compare-caption .tag.after { background: #D1FAE5; color: #065F46; }
+:root[data-theme="dark"] .compare-caption .tag.before { background: #7F1D1D; color: #FECACA; }
+:root[data-theme="dark"] .compare-caption .tag.after { background: #064E3B; color: #A7F3D0; }
+
+/* ========== S10 不足 ========== */
+.improve-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+}
+.improve-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px; box-shadow: var(--shadow);
+}
+.improve-card h3 { font-size: 17px; margin-bottom: 14px; font-weight: 600; }
+.improve-card.problem h3 { color: #DC2626; }
+:root[data-theme="dark"] .improve-card.problem h3 { color: #F87171; }
+.improve-card.solution h3 { color: #059669; }
+:root[data-theme="dark"] .improve-card.solution h3 { color: #34D399; }
+.improve-card p { font-size: 15px; color: var(--text-soft); line-height: 1.8; }
+.improve-card .highlight {
+  background: var(--accent-soft); color: var(--accent-text);
+  padding: 2px 6px; border-radius: 4px; font-weight: 500;
+}
+
+/* ========== S11 结尾 ========== */
+.footer {
+  text-align: center; padding: 80px 32px;
+  background: var(--bg-subtle);
+}
+.footer h2 { font-size: 28px; font-weight: 700; margin-bottom: 16px; }
+.footer p { font-size: 16px; color: var(--text-muted); max-width: 540px; margin: 0 auto 24px; }
+.footer-quote {
+  font-size: 18px; color: var(--text); font-weight: 500;
+  max-width: 600px; margin: 0 auto; padding: 24px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; box-shadow: var(--shadow);
+}
+
+/* ========== 简历专用 ========== */
+.resume-info {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;
+}
+.resume-info-item {
+  background: var(--bg-subtle); border-radius: 10px; padding: 16px 20px;
+}
+.resume-info-item .label {
+  font-size: 12px; color: var(--text-muted); margin-bottom: 4px; letter-spacing: 0.5px;
+}
+.resume-info-item .value { font-size: 15px; color: var(--text); font-weight: 500; }
+
+.resume-job {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px; box-shadow: var(--shadow); margin-bottom: 20px;
+}
+.resume-job-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px; margin-bottom: 16px; padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.resume-job-title { font-size: 18px; font-weight: 600; color: var(--text); }
+.resume-job-title .company { color: var(--text-muted); font-weight: 500; margin-right: 8px; }
+.resume-job-period { font-size: 13px; color: var(--accent); font-weight: 500; }
+.resume-job-meta {
+  font-size: 14px; color: var(--text-muted); margin-bottom: 16px;
+  padding: 8px 14px; background: var(--bg-subtle); border-radius: 6px;
+}
+.resume-block-title {
+  font-size: 14px; font-weight: 600; color: var(--accent);
+  margin: 18px 0 10px; letter-spacing: 0.5px;
+}
+.resume-block-title::before { content: "▸ "; }
+.resume-job ul { list-style: none; padding: 0; margin: 0; }
+.resume-job ul li {
+  padding: 8px 0 8px 20px; position: relative; font-size: 15px;
+  color: var(--text-soft); line-height: 1.7;
+}
+.resume-job ul li::before {
+  content: "•"; position: absolute; left: 4px; color: var(--accent); font-weight: 600;
+}
+.resume-job ul li strong { color: var(--text); font-weight: 600; }
+.resume-results {
+  background: var(--accent-soft); border-radius: 10px; padding: 16px 20px;
+  margin-top: 16px; font-size: 14px; color: var(--accent-text);
+}
+.resume-results strong { font-weight: 600; }
+
+/* ========== 响应式 ========== */
+@media (max-width: 880px) {
+  .nav-links { display: none; }
+  .container { padding: 0 20px; }
+  .stage-grid { grid-template-columns: 1fr 1fr; }
+  .insight-grid { grid-template-columns: 1fr; }
+  .kpi-grid { grid-template-columns: 1fr; }
+  .flow-4 { grid-template-columns: 1fr 1fr; }
+  .result-grid { grid-template-columns: 1fr; }
+  .compare { grid-template-columns: 1fr; }
+  .improve-grid { grid-template-columns: 1fr; }
+  .resume-info { grid-template-columns: 1fr 1fr; }
+  .timeline::before { left: 7px; }
+  .timeline-item { padding: 20px 0; }
+  .timeline-dot { left: -24px; }
+  .hero h1 { font-size: 32px; }
+  .section-title { font-size: 26px; }
+}
+</style>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<nav class="nav">
+  <div class="nav-brand">蒋金才 · 面试自我介绍</div>
+  <div class="nav-links">
+    <a href="#intro" data-nav>简介</a>
+    <a href="#ai" data-nav>AI能力</a>
+    <a href="#insight" data-nav>需求洞察</a>
+    <a href="#kpi" data-nav>业绩</a>
+    <a href="#cases" data-nav>案例</a>
+    <a href="#improve" data-nav>不足改进</a>
+    <a href="#resume" data-nav>简历</a>
+  </div>
+  <button class="theme-toggle" id="themeToggle">🌙 暗色</button>
+</nav>
+
+<!-- S1 封面 -->
+<section class="hero" id="hero">
+  <div>
+    <div class="hero-avatar">蒋</div>
+    <h1>蒋金才</h1>
+    <p class="hero-subtitle">30岁 · 8年互联网经验 · 货拉拉1年 + 快手6年</p>
+    <div class="hero-tags">
+      <span class="hero-tag">探索新事物能力</span>
+      <span class="hero-tag">需求洞察能力</span>
+      <span class="hero-tag outline">社群项目交付</span>
+    </div>
+    <div class="hero-quote">
+      在快手 6 年，从客服服务交付到社群项目交付，一直在做的事是<strong>"让不同角色的人都能满意"</strong>——我不仅能够做信息翻译和闭环，让不同角色达成共识；还能用<strong>价值衡量</strong>的方式，把这件事对公司的价值看清楚、说出来。
+    </div>
+  </div>
+</section>
+
+<!-- S2 时间轴 -->
+<section id="intro">
+  <div class="container">
+    <span class="section-tag">个人简介</span>
+    <h2 class="section-title">职业经历</h2>
+    <p class="section-desc">从城市运营到客服服务，再到社群项目交付，一直在一线和不同角色打交道。</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>货拉拉 · 城市运营</h3>
+          <div class="meta">1年 · 司机招募 + 站点客诉处理</div>
+          <p>负责城市司机招募、站点运营和客诉处理，积累了最早的一线运营和人际沟通经验。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>快手 · 客服服务交付</h3>
+          <div class="meta">1.5年</div>
+          <p>管理自建纠纷组，处理高危舆情回电，获得全国最美客服、守夜奖项。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>快手 · 社群项目交付</h3>
+          <div class="meta">4.5年 · PMO 角色 + 业务拓展</div>
+          <p>负责社群项目从 10 个量级拓展到 50+ 量级，主 R 快成长项目获用户体验部年度优秀项目；同步推进 AI 在团队提效中的落地。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S3 AI 探索4阶段 -->
+<section id="ai">
+  <div class="container">
+    <span class="section-tag">能力一 · 探索新事物</span>
+    <h2 class="section-title">AI 工程化的4阶段演进</h2>
+    <p class="section-desc">从 AI 刚出来就开始探索，按"提示词 → Skill → MCP → Harness-loop"4个阶段迭代，每个阶段都对应团队实际痛点并有落地产出。</p>
+    <div class="stage-grid">
+      <div class="stage-card">
+        <span class="stage-num">阶段 1</span>
+        <h4>元提示词工程</h4>
+        <div class="pain">痛点：提示词是 AI 使用从 40 分到 60 分的关键变量</div>
+        <div class="gain">通过自己摸索和论坛扒拉，产出<strong>元提示词</strong>，直接帮助团队在提示词生成和 AI 使用上提效；并借助元提示词做了会议内容梳理的 Agent，沉淀为知识库。</div>
+        <div class="link-row" style="margin-top:14px; padding-top:10px; border-top:1px dashed var(--border);">
+          <a href="https://luigi.corp.kuaishou.com/bot/642179512188956833/829411044195444708/build" target="_blank">📎 元提示词 Bot</a>
+          <a href="https://luigi.corp.kuaishou.com/bot/642179512188956833/828091147641426978/build" target="_blank">📎 会议梳理 Agent</a>
+          <a href="https://luigi.corp.kuaishou.com/group/642179512188956833/knowledge/2000481241782071296/2000482245793591296" target="_blank">📎 知识库</a>
+        </div>
+      </div>
+      <div class="stage-card">
+        <span class="stage-num">阶段 2</span>
+        <h4>Skill 工程化</h4>
+        <div class="pain">痛点：每周取数 5 小时（5min × 60 个数据）；做数据 2-3 小时且易错</div>
+        <div class="gain">通过 KESS Agent + SQL 自动跑数，<strong>5 小时降到 1 小时</strong>；通过 Agent 做数据可视化自动化，输出周报 HTML；同时做了知识库整理提示词。</div>
+        <div class="link-row" style="margin-top:14px; padding-top:10px; border-top:1px dashed var(--border);">
+          <a href="https://wk19-weekly-report-c1d20c20.frontend-cloud.corp.kuaishou.com/" target="_blank">📎 数据周报示例</a>
+          <a href="https://skills.corp.kuaishou.com/skill?skillId=d13243b5-2caa-45e1-9dcf-4a7eb9e013b7&domainId=public" target="_blank">📎 数据 Skill（内网）</a>
+        </div>
+      </div>
+      <div class="stage-card">
+        <span class="stage-num">阶段 3</span>
+        <h4>MCP 工具化</h4>
+        <div class="pain">痛点：业务需要"向外看"，搜集情报和优质内容成本高</div>
+        <div class="gain">基于 GitHub 工具做了<strong>网页爬虫工具</strong>（可跳过反爬虫机制）；做了<strong>抖音/小红书爬虫</strong>并配套视频下载转文字，高效学习感兴趣的博主内容。</div>
+        <div class="link-row" style="margin-top:14px; padding-top:10px; border-top:1px dashed var(--border);">
+          <a href="https://skills.corp.kuaishou.com/skill?skillId=50e26e6f-57d3-493a-b16b-06e2442f7742&domainId=public" target="_blank">📎 爬虫工具 Skill（内网）</a>
+        </div>
+      </div>
+      <div class="stage-card">
+        <span class="stage-num">阶段 4</span>
+        <h4>Harness-loop</h4>
+        <div class="pain">痛点：给 Agent 造缰绳 + 让 Agent 自循环干活，前提是 AI 更了解我</div>
+        <div class="gain">最近在做 <strong>Agent PM 专项</strong>：定期进行我和 Agent 的会话提取、蒸馏、按项目归档，从而约束 Agent 按各项目要求工作。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S4 需求洞察 -->
+<section id="insight">
+  <div class="container">
+    <span class="section-tag">能力二 · 需求洞察</span>
+    <h2 class="section-title">需求洞察方法论 + 业务线指标理解</h2>
+    <p class="section-desc">在快手实际做的工作主要是和不同的人沟通让大家都能满意，所以需求洞察是核心能力。</p>
+    <div class="insight-grid">
+      <div class="method-card">
+        <h3>洞察方法论</h3>
+        <div class="method-formula"><span>了解对方目的</span> + <span>考核体系</span></div>
+        <ul class="method-list">
+          <li>了解对方的目的：业务方到底想解决什么问题</li>
+          <li>了解考核体系：指标背负的原理是什么</li>
+          <li>用大家听得懂的话把价值和能力传递出去</li>
+          <li>在团队中扮演 PMO 角色：业务侧 ↔ 社群能力的翻译者</li>
+        </ul>
+      </div>
+      <div class="metric-matrix">
+        <h3 style="font-size:18px; font-weight:600; margin-bottom:16px;">业务线指标理解</h3>
+        <div class="metric-row">
+          <div class="metric-label">电商</div>
+          <div class="metric-desc">从 GMV 考核到综合赋税收入，理解背后是"成本效率"的本质回归</div>
+        </div>
+        <div class="metric-row">
+          <div class="metric-label">主站</div>
+          <div class="metric-desc">内容生态、创作者活跃、播放互动等创作者侧指标</div>
+        </div>
+        <div class="metric-row">
+          <div class="metric-label">内容运营</div>
+          <div class="metric-desc">从大中台到小中台，理解背后是为了更好的协作</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S5 业绩看板 -->
+<section id="kpi">
+  <div class="container">
+    <span class="section-tag">业绩数据看板</span>
+    <h2 class="section-title">26H1 核心增长数据</h2>
+    <p class="section-desc">基于对业务线指标原理的理解，在业务拓展上实现了较快增长。</p>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="27">0</div>
+        <div class="kpi-label">项目数量同比</div>
+        <div class="kpi-sub">26H1 vs 25H1</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="70">0</div>
+        <div class="kpi-label">用户规模同比</div>
+        <div class="kpi-sub">26H1 vs 25H1</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="59">0</div>
+        <div class="kpi-label">营收规模同比</div>
+        <div class="kpi-sub">26H1 vs 25H1</div>
+      </div>
+    </div>
+    <div class="project-growth">
+      <h3>社群项目数量变化（接近翻倍增长）</h3>
+      <div class="growth-row">
+        <div class="growth-year">25 年</div>
+        <div class="growth-bar"><div class="growth-bar-fill" data-width="20"></div></div>
+        <div class="growth-num">10 → 20</div>
+      </div>
+      <div class="growth-row">
+        <div class="growth-year">26 年</div>
+        <div class="growth-bar"><div class="growth-bar-fill" data-width="100"></div></div>
+        <div class="growth-num">20+ → 50+</div>
+      </div>
+    </div>
+    <div class="link-row" style="margin-top:20px;">
+      <a href="https://docs.corp.kuaishou.com/d/home/fcAC8ToSrxtqA_IAGhzy4V-zW" target="_blank">📎 26H1 复盘文档</a>
+    </div>
+  </div>
+</section>
+
+<!-- S6-S9 案例 -->
+<section id="cases">
+  <div class="container">
+    <span class="section-tag">核心案例</span>
+    <h2 class="section-title">4个代表性项目案例</h2>
+    <p class="section-desc">覆盖社群运营、内容共创、服务交付、安全治理四个维度。</p>
+
+    <!-- 案例A 快成长NPS -->
+    <div class="case-card">
+      <div class="case-header">
+        <div class="case-title">案例 A · 快成长业务合作运营项目</div>
+        <span class="case-badge gold">年度优秀项目 · S 级评价</span>
+      </div>
+      <div class="flow-4">
+        <div class="flow-step">
+          <div class="flow-step-label">PAIN · 痛点</div>
+          <h5>活动有吸引力但创作者断点</h5>
+          <p>本该"制定活动→作者参与→双赢"，但创作者链路会因各种原因断掉。</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-label">INSIGHT · 洞察</div>
+          <h5>NPS 调研发现真实需求</h5>
+          <p>通过满意度 NPS 调研，发现创作者真正想要的是数据反馈和成长路径。</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-label">ACTION · 行动</div>
+          <h5>群内调研印证猜想</h5>
+          <p>在群内做调研印证猜想，说服业务方给资源做培优活动。</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-label">RESULT · 结果</div>
+          <h5>发现新增长渠道 · 获 S 级</h5>
+          <p>项目获用户体验部年度优秀项目，年终 S 级评价。</p>
+        </div>
+      </div>
+      <div class="link-row">
+        <a href="https://docs.corp.kuaishou.com/d/home/fcABDN4TWH2_g14gc17Gee1U5" target="_blank">📎 Q3 复盘</a>
+        <a href="https://docs.corp.kuaishou.com/d/home/fcAAqAH43GItCXf6HO4IIeNYj" target="_blank">📎 调研报告</a>
+        <a href="https://docs.corp.kuaishou.com/d/home/fcAC_W-oBW9hokd7dIHLZcM2a" target="_blank">📎 活动方案</a>
+      </div>
+    </div>
+
+    <!-- 案例B 创作者专栏 -->
+    <div class="case-card">
+      <div class="case-header">
+        <div class="case-title">案例 B · 快手创作者专栏 + 官号联动</div>
+        <span class="case-badge">内容共创 · 标杆发掘</span>
+      </div>
+      <div class="flow-4">
+        <div class="flow-step">
+          <div class="flow-step-label">PAIN · 痛点</div>
+          <h5>单个培优产出有限</h5>
+          <p>单个做不太好做大产出，需要放大机制。</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-label">INSIGHT · 洞察</div>
+          <h5>55.98% 想看草根成长故事</h5>
+          <p>调研发现 55.98% 用户对成长感兴趣（破冰 41.77% + 草根逆袭 14.21%，N=95）。</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-label">ACTION · 行动</div>
+          <h5>协调官号共创资源</h5>
+          <p>设计创作者专栏，和内容运营部负责官号同学协调，创作者作品可直发官号。</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-label">RESULT · 结果</div>
+          <h5>三方共赢 + 标杆发掘</h5>
+          <p>官号同学有 KPI、创作者有动力、宣发范围扩大；发掘标杆创作者「社恐的小羊」。</p>
+        </div>
+      </div>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="num">267w</div>
+          <div class="label">对外播放量</div>
+        </div>
+        <div class="result-item">
+          <div class="num">9w</div>
+          <div class="label">对外点赞量</div>
+        </div>
+        <div class="result-item">
+          <div class="num">省 20w</div>
+          <div class="label">预算（避免外采）</div>
+        </div>
+        <div class="result-item">
+          <div class="num">269</div>
+          <div class="label">内部精选浏览</div>
+        </div>
+        <div class="result-item">
+          <div class="num">38</div>
+          <div class="label">内部点赞</div>
+        </div>
+        <div class="result-item">
+          <div class="num">第 1 篇</div>
+          <div class="label">社群精选首发</div>
+        </div>
+      </div>
+      <div class="link-row">
+        <a href="https://docs.corp.kuaishou.com/d/home/fcACIMg3ndfPIqjkZHS4auluU" target="_blank">📎 调研反馈</a>
+        <a href="https://docs.corp.kuaishou.com/d/home/fcADaZzz4TaVGVZj8n5G0gf3L" target="_blank">📎 专栏方案</a>
+        <a href="https://docs.corp.kuaishou.com/d/home/fcADSe4U0_LN7XPqo-JcB_Yer" target="_blank">📎 专栏复盘</a>
+        <a href="https://docs.corp.kuaishou.com/d/home/fcABorplkwSiupz8fipT3ZXa4" target="_blank">📎 内部精选</a>
+        <a href="https://admin.p.adm-corp.kuaishou.com/frontend/archives/index.html#/archives/video/home?photoId=177584329646" target="_blank">📎 标杆创作者·社恐的小羊</a>
+      </div>
+    </div>
+
+    <!-- 案例C 全员群服务 -->
+    <div class="case-card">
+      <div class="case-header">
+        <div class="case-title">案例 C · 全员群服务：从质疑到认可</div>
+        <span class="case-badge">服务交付 · 体验升级</span>
+      </div>
+      <p style="margin-bottom:20px; color:var(--text-soft);">在全员群服务备受质疑的时候接受，通过努力把服务从"备受质疑"做到"受到认可"。</p>
+      <div class="compare">
+        <div class="compare-card">
+          <img src="interview_assets/图片-663e3520.png" alt="25年4月·质疑截图">
+          <div class="compare-caption">
+            <span class="tag before">25 年 4 月</span>
+            <span>欣哥在群里道歉，回答不好</span>
+          </div>
+        </div>
+        <div class="compare-card">
+          <img src="interview_assets/图片-92b43750.png" alt="25年7月·认可截图">
+          <div class="compare-caption">
+            <span class="tag after">25 年 7 月</span>
+            <span>L4 负责人孔慧表扬做得好</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:24px; padding:20px; background:var(--bg-subtle); border-radius:10px;">
+        <div style="font-size:14px; font-weight:600; color:var(--accent); margin-bottom:12px;">这里我做了什么</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; font-size:14px; color:var(--text-soft);">
+          <div>
+            <strong style="color:var(--text);">① 服务标准校准</strong><br>
+            和欣哥 one-one 后带回和翔哥讨论，产出"说人话、办人事"规则，逐条校准 + 二级反馈。
+          </div>
+          <div>
+            <strong style="color:var(--text);">② 问题解决通路基建</strong><br>
+            建知识库，梳理解决通路，建立更新流程质检标准。
+          </div>
+        </div>
+      </div>
+      <div class="link-row">
+        <a href="https://docs.corp.kuaishou.com/d/home/fcAABJQYqn202f46ZZa6gkJYx" target="_blank">📎 每天对的记录</a>
+        <a href="https://docs.corp.kuaishou.com/d/home/fcADOmGzbIoyvF5CNZnCCv1xy" target="_blank">📎 知识库</a>
+      </div>
+    </div>
+
+    <!-- 案例D 安全线治理 -->
+    <div class="case-card">
+      <div class="case-header">
+        <div class="case-title">案例 D · 安全线治理</div>
+        <span class="case-badge gold">治理大赛第三名</span>
+      </div>
+      <div class="flow-4" style="grid-template-columns: repeat(3, 1fr); max-width: 760px;">
+        <div class="flow-step">
+          <div class="flow-step-label">INSIGHT · 差异化洞察</div>
+          <h5>小学老师家访调研</h5>
+          <p>团队成员丁好的老婆是淮安市山阳小学3年级班主任，通过对12户学生家庭暑期家访，发现"视野外认知"。</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-label">RESULT 1</div>
+          <h5>治理大赛第三名</h5>
+          <p>欣哥认可方案，但指出不够落地。</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-label">RESULT 2</div>
+          <h5>引入广东警务媒体</h5>
+          <p>对齐需求：了解到他们也有各平台曝光的需求。</p>
+        </div>
+      </div>
+      <div style="margin-top:24px; padding:20px 24px; background:var(--bg-subtle); border-radius:10px; border-left:3px solid var(--accent);">
+        <div style="font-size:14px; font-weight:600; color:var(--accent); margin-bottom:10px;">家访调研发现的 3 个"视野外认知"</div>
+        <ul style="margin:0; padding-left:20px; font-size:14px; color:var(--text-soft); line-height:1.9;">
+          <li><strong style="color:var(--text);">90% 青少年不会开启青少年模式</strong>——传统"未成年人账号标识"保护机制难以覆盖</li>
+          <li><strong style="color:var(--text);">90% 青少年暑期使用家长账号</strong>——非自己实名注册，账号信息与实际使用者不符</li>
+          <li><strong style="color:var(--text);">青少年账号存在共性特征</strong>——①实名年龄与关注内容不一致；②亲属账号同一 IP 下多个登录，各账号浏览内容特征明显（爷爷奶奶看新闻/广场舞，爸妈看热点/搞笑，青少年看二次元/明星）</li>
+        </ul>
+        <div style="margin-top:12px; padding-top:12px; border-top:1px dashed var(--border); font-size:13px; color:var(--text-muted);">
+          💡 这个洞察直接支撑了"识别青少年账号特征，建立亲情关系网"治理环节，是方案差异化的关键来源
+        </div>
+      </div>
+      <div class="link-row">
+        <a href="https://docs.corp.kuaishou.com/d/home/fcADN6KrxjTIIwvlehMMimUnJ" target="_blank">📎 暑期防骗专项方案·终版</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S10 不足与改进 -->
+<section id="improve">
+  <div class="container">
+    <span class="section-tag">个人不足与改进</span>
+    <h2 class="section-title">PMO 拉齐不够 → 业务运转理解加深</h2>
+    <p class="section-desc">一直在改的地方：作为 PMO 角色，把业务需求和社群能力互相翻译，过去存在"为了求快没有把为什么讲够"的问题。</p>
+    <div class="improve-grid">
+      <div class="improve-card problem">
+        <h3>⚠ 过去的问题</h3>
+        <p>对指标的时候我会传递业务侧的指标和目标，也能说清楚这个指标有什么价值、对我们有什么用，但是<span class="highlight">业务侧为什么要做</span>实际上我没有挖清楚。</p>
+      </div>
+      <div class="improve-card solution">
+        <h3>✓ 现在的改进</h3>
+        <p>改到现在最大的收获是对<span class="highlight">业务侧运转逻辑</span>有了更清楚的了解。例如：电商业务方从考核 GMV 到综合赋税收入，背后是商家多卖货 → 依赖投流 → 投流要生产能力 → 回归成本效率本质，一个人做会让商家在合适成本下把货卖给更多人。</p>
+      </div>
+    </div>
+    <div style="margin-top:24px; padding:24px 28px; background:var(--bg-card); border:1px solid var(--border); border-radius:14px; box-shadow:var(--shadow);">
+      <div style="font-size:15px; color:var(--text-soft); line-height:1.8;">
+        <strong style="color:var(--text);">团队收益：</strong>把这些"为什么"传递给团队伙伴，解释清楚这个指标为什么在不同的人身上不一样，现在社群伙伴对业务的理解也会更好。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S11 结尾 -->
+<!-- S11 详细简历 -->
+<section id="resume">
+  <div class="container">
+    <span class="section-tag">详细简历</span>
+    <h2 class="section-title">蒋金才 · 完整简历</h2>
+    <p class="section-desc">以下为详细简历内容，覆盖个人信息、工作经历和教育经历。</p>
+
+    <!-- 个人信息 -->
+    <div class="resume-info">
+      <div class="resume-info-item">
+        <div class="label">性别 / 年龄</div>
+        <div class="value">男 · 30岁</div>
+      </div>
+      <div class="resume-info-item">
+        <div class="label">联系电话</div>
+        <div class="value">18581431926</div>
+      </div>
+      <div class="resume-info-item">
+        <div class="label">邮箱</div>
+        <div class="value">1179383619@qq.com</div>
+      </div>
+      <div class="resume-info-item">
+        <div class="label">求职意向 / 城市</div>
+        <div class="value">体验运营 · 北京</div>
+      </div>
+    </div>
+
+    <!-- 个人优势 -->
+    <div class="case-card" style="margin-bottom:28px;">
+      <div class="case-header">
+        <div class="case-title">个人优势</div>
+      </div>
+      <p style="font-size:15px; color:var(--text-soft); line-height:1.8;">
+        8年互联网运营经验，6年体验工作经历，客服组长→社群项目督导。擅长跨部门协作、指标拆解与诊断、证明项目价值，同时深度参与内容型平台各个业务线价值共创，深刻理解业务逻辑，了解 Agent 运行原理并有 AI 提效的结果。
+      </p>
+    </div>
+
+    <div class="resume-block-title" style="font-size:16px; margin:32px 0 20px;">工作经历</div>
+
+    <!-- 项目督导 -->
+    <div class="resume-job">
+      <div class="resume-job-header">
+        <div class="resume-job-title"><span class="company">北京达佳互联信息技术有限公司</span>项目督导</div>
+        <div class="resume-job-period">2022.01 - 至今</div>
+      </div>
+      <div class="resume-job-meta">负责用户体验部社群运营团队与公司的各个业务线建立良好的合作共建关系并完成指标交付</div>
+      <div class="resume-block-title">工作内容</div>
+      <ul>
+        <li><strong>业务拓展</strong>：负责制定业务拓展、扩量规划，推动项目从需求形成到落地交付的全流程</li>
+        <li><strong>业务反馈</strong>：负责与业务侧反馈沟通解决项目卡点，如客诉反馈与闭环、资源协调等，NPS 调研</li>
+        <li><strong>项目经营</strong>：负责基建项目价值、项目收益、项目 ROI 体系；负责共识项目指标、推动项目方案、目标共识、建立目标管理机制确保交付</li>
+      </ul>
+      <div class="resume-block-title">核心业绩</div>
+      <p style="font-size:15px; color:var(--text-soft); margin-bottom:12px;">
+        运营用户规模 2w 人，项目季度流水规模数 5.1 亿元，季度归因流水近 931 万元，25 年获得 L4 负责人年度 S 级评价 6 项。
+      </p>
+      <ul>
+        <li><strong>业务拓展</strong>：项目数量 25 年 H1（9 个）→ 26 年 H1（13 个），同比增长 44%，合作覆盖快手电商、主站、商业化、生活服务等 13 个业务中心，共建涉及综合赋税收入、打开理由收入、播放时长收入、投流消耗收入等核心收益指标</li>
+        <li><strong>业务反馈</strong>：从不合理现状出发，从用户诉求出发、潜在需求出发以及群体心智出发，给用户创造价值、为公司创造价值、为业务带来 KPI 增长。
+          <ul style="margin-top:8px; padding-left:8px;">
+            <li><strong>不合理出发</strong>：二次元促产专项中创作者发布平台版权作品仍被处罚，通过协调治理侧、版权侧、运营侧拉齐规则，最终避免平台处罚过严，规则合理后解封作品带来内容价值 2.25w</li>
+            <li><strong>诉求出发</strong>：中小商家专项借助客诉与调研定位用户补贴诉求，设计打卡活动，协调商家补贴资源带来 101w 消耗增量收益，活动 ROI 5.1</li>
+            <li><strong>潜在需求出发</strong>：泛知识业务合作运营专项借助用户反馈与 NPS 调研定位不开播原因，设计培优活动与业务共创，验证出打开理由增长的新的方法论</li>
+            <li><strong>群体心智出发</strong>：快成长业务合作运营专项针对当前中小作者心智现状，参考抖音作者专栏，设计快成长创作者专栏，并在社群执行，总计发布 58 篇作者采访，复现平台创作者的成长路径，为公司节省采购成本约 18w</li>
+          </ul>
+        </li>
+        <li><strong>建立项目经营管理机制</strong>：项目价值看清数量从 48%（13 个）上升到 76%（25 个），周均价值产出从 2000w 提升到 4000w，ROI 从 4.4 提升到 7.8；项目目标覆盖比例从 22%（6 个）提升到 33%（13 个）</li>
+      </ul>
+    </div>
+
+    <!-- 客服组长 -->
+    <div class="resume-job">
+      <div class="resume-job-header">
+        <div class="resume-job-title"><span class="company">北京达佳互联信息技术有限公司</span>客服组长</div>
+        <div class="resume-job-period">2020.06 - 2021.12</div>
+      </div>
+      <div class="resume-block-title">工作内容</div>
+      <ul>
+        <li><strong>团队日常管理</strong>：负责电商交易纠纷业务团队的日常运营、绩效考核与人才培养</li>
+        <li><strong>高危客诉处置</strong>：负责涉政、涉伤亡等高危舆情客诉的应急回电与危机处置</li>
+        <li><strong>服务意识提升专项</strong>：发现投诉成立量与表扬量持平，根因分析为核心为员工同理心沟通缺乏；首创「功过比」指标（表扬成立/投诉成立）实现服务质量正负双向衡量；与 EAP 心理辅导团队共建，定制安抚技巧培训，建立标杆带教+周期复盘会机制，实现功过比提升</li>
+        <li><strong>沟通创新</strong>：基于商家经营视角，将纠纷沟通框架从"平台执法→商家赔付"重构为"协助商家识别经营风险→引导商家主动介入"</li>
+        <li><strong>培训体系</strong>：建立团队培训机制，沉淀服务标准方法论，个人及团队案例被用于新人价值观培训教材</li>
+      </ul>
+      <div class="resume-block-title">核心业绩</div>
+      <ul>
+        <li><strong>质量</strong>：满意度+解决率双 TOP1</li>
+        <li><strong>专项</strong>：投诉成立量归零、表扬成立率升至 42%</li>
+        <li><strong>创新</strong>：三方调解机制系统性降低平台赔付成本</li>
+        <li><strong>荣誉</strong>：优秀案例 30+ 例，全中心 TOP1；组内培养出一名部门级年度优秀员工；个人获得全国最美客服（国家级）、守夜人（公司级）、榜样的力量（部门级）</li>
+      </ul>
+    </div>
+
+    <!-- 门店店长 -->
+    <div class="resume-job">
+      <div class="resume-job-header">
+        <div class="resume-job-title"><span class="company">昌都市卡若区世纪格萨商贸有限责任公司</span>门店店长</div>
+        <div class="resume-job-period">2019.12 - 2020.05</div>
+      </div>
+      <p style="font-size:15px; color:var(--text-soft);">
+        负责 2000 平米、50+ 员工超市全面运营管理，项目投资 1800w。
+      </p>
+    </div>
+
+    <!-- 运营专员 -->
+    <div class="resume-job">
+      <div class="resume-job-header">
+        <div class="resume-job-title"><span class="company">深圳依时货拉拉科技有限公司</span>运营专员</div>
+        <div class="resume-job-period">2019.02 - 2019.12</div>
+      </div>
+      <div class="resume-block-title">工作内容</div>
+      <ul>
+        <li>负责货拉拉 App 重庆城市的司机端运营</li>
+        <li><strong>对拉新结果负责</strong>：新用户筛选、建联邀约、上岗培训、付费认证</li>
+        <li><strong>对门店售后负责</strong>：负责微信、电话、上门等渠道客诉问题解决</li>
+      </ul>
+      <div class="resume-block-title">核心业绩</div>
+      <div class="resume-results">
+        <strong>司机拉新重庆城市第一名，西南大区第二名</strong>
+      </div>
+    </div>
+
+    <!-- 教育经历 -->
+    <div class="resume-block-title" style="font-size:16px; margin:32px 0 20px;">教育经历</div>
+    <div class="resume-job">
+      <div class="resume-job-header">
+        <div class="resume-job-title"><span class="company">重庆安全技术职业学院</span>大专 · 应用化工技术</div>
+        <div class="resume-job-period">2014 - 2017</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S12 结尾 -->
+<footer class="footer" id="end">
+  <h2>感谢您的时间</h2>
+  <p>以上是我基于过去 8 年工作经验，对探索新事物和需求洞察能力的梳理。</p>
+  <div class="footer-quote">
+    期待能有机会和您一起，把这些能力用到新的业务挑战里。
+  </div>
+</footer>
+
+<script>
+// 主题切换
+const themeToggle = document.getElementById('themeToggle');
+const root = document.documentElement;
+themeToggle.addEventListener('click', () => {
+  const current = root.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
+  root.setAttribute('data-theme', next);
+  themeToggle.textContent = next === 'light' ? '🌙 暗色' : '☀ 亮色';
+  localStorage.setItem('theme', next);
+});
+// 恢复主题
+const saved = localStorage.getItem('theme');
+if (saved) {
+  root.setAttribute('data-theme', saved);
+  themeToggle.textContent = saved === 'light' ? '🌙 暗色' : '☀ 亮色';
+}
+
+// 数字滚动动画
+function animateNumber(el, target, duration = 1500) {
+  const start = 0;
+  const startTime = performance.now();
+  function update(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(start + (target - start) * eased);
+    if (progress < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
+// IntersectionObserver 触发数字和进度条动画
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      if (el.classList.contains('kpi-value') && !el.dataset.animated) {
+        el.dataset.animated = 'true';
+        animateNumber(el, parseInt(el.dataset.target));
+      }
+      if (el.classList.contains('growth-bar-fill') && !el.dataset.animated) {
+        el.dataset.animated = 'true';
+        el.style.width = el.dataset.width + '%';
+      }
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.kpi-value, .growth-bar-fill').forEach(el => observer.observe(el));
+
+// 导航高亮
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a[data-nav]');
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+sections.forEach(s => navObserver.observe(s));
+</script>
+</body>
+</html>
